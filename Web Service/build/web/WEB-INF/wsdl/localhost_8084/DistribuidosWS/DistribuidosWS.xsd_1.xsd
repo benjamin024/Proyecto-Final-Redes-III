@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://WS/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WS/">
+
+<xs:element name="checkIn" type="tns:checkIn" />
+
+<xs:element name="checkInResponse" type="tns:checkInResponse" />
+
+<xs:complexType name="checkIn">
+<xs:sequence>
+<xs:element name="lat" type="xs:string" minOccurs="0" />
+<xs:element name="lng" type="xs:string" minOccurs="0" />
+<xs:element name="r" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="checkInResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
